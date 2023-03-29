@@ -11,6 +11,7 @@ namespace Students.Models
     {
         public string firstName;
         public string lastName;
+        public string secondName;
         public Course course;
 
         public static void AddStudent(List<Student> studentList ,Student student)
@@ -30,7 +31,7 @@ namespace Students.Models
 
                 foreach (var student in courseGroup)
                 {
-                    Console.WriteLine("{0} {1}", student.firstName, student.lastName);
+                    Console.WriteLine("{0} {1} {2}", student.firstName, student.secondName, student.lastName);
                 }
 
                 Console.WriteLine();
